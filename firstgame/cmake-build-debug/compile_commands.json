@@ -1,0 +1,8 @@
+[
+{
+  "directory": "/Users/jonah/firstgame/cmake-build-debug",
+  "command": "/usr/bin/c++ -g -std=c++23 -g -std=c++23 -arch arm64 -fcolor-diagnostics -std=c++23 -O3 -o CMakeFiles/optai_test.dir/optai.cpp.o -c /Users/jonah/firstgame/optai.cpp",
+  "file": "/Users/jonah/firstgame/optai.cpp",
+  "output": "/Users/jonah/firstgame/cmake-build-debug/CMakeFiles/optai_test.dir/optai.cpp.o"
+}
+]

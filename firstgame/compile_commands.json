@@ -1,0 +1,8 @@
+[
+{
+  "directory": "/Users/jonah/firstgame",
+  "command": "/usr/bin/c++   -std=c++23 -arch arm64 -std=c++23 -O3 -o CMakeFiles/optai_test.dir/optai.cpp.o -c /Users/jonah/firstgame/optai.cpp",
+  "file": "/Users/jonah/firstgame/optai.cpp",
+  "output": "CMakeFiles/optai_test.dir/optai.cpp.o"
+}
+]
