@@ -4,7 +4,7 @@ This is my first AI, I am making it without AI libraries. It is an AI that tries
 My dataset is Apple stock daily from 9/7/21 to 8/7/26. It is attached in the file "aapl_prices.csv". I got it for free from Stooq.
 All numbers are normalized with their Z score, which gives you the amount of standard deviations away from the mean a certain data point is.
 I used an in sample and out of sample performance difference:
-## ==== TRAINED WEIGHTS - BETA ====
+** ==== TRAINED WEIGHTS - BETA ==== **
 Intercept            : 0.000649
 
 Return Today         : 0.000782
