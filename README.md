@@ -31,12 +31,12 @@ Next Prediction      : 0.005117
 
 Actual Next Change   : 0.004534
 ## Closing Details
-What this data shows you (I believe) is that this model is not over- or under-fitted. This is because of the fact that the MSE is relatively low, and it stays almost identical when tested on non training data. In addition, ~56% directional accuracy means that it was accurate a lot of the time when predicting just to "buy" or "sell", in the sense that this isn't actually simulating buying or selling, just predicting. Overall, this is not that good, but it is my first AI project so I didn't have high hopes.
+What this data shows you (I believe) is that this model is not over- or under-fitted. This is because of the fact that the MSE is relatively low, and it stays almost identical when tested on non training data. In addition, ~56% directional accuracy means that it was accurate a lot of the time when predicting just to "buy" or "sell", in the sense that this isn't actually simulating buying or selling, just predicting. Overall, this was very exciting to make and stare at after I finished (and brag about).
 
 # Conclusion
-This was pretty fun. I learned way more than from any of my C++ books making this (although I only have one C++ book). I had to look up much more than I wanted to, but I suppose that's part of being a developer. The part with all the matrix stuff was easy, it was mostly the actual AI making where i had to look up how to make it learn, what beta was, how to actually get accurate predictions, and what specific data to use to get these predictions. It was really hard overall because I don't think I really grasped how simple (asterisk) AI is. What I mean by that is it all ended up being, although slightly convoluted, math. I thought I knew much more than I did, so this project definitely humbled me. I would give this project a 10/10 for effort and learning. Also its really cool to know I made this.
+This was pretty fun. I learned way more than from any of my C++ books making this (although I only have one C++ book). I had to look up much more than I wanted to, but I suppose that's part of being a developer. The part with all the matrix stuff was easy, it was mostly the actual AI making where i had to look up how to make it learn, what beta was, how to actually get accurate predictions, and what specific data to use to get these predictions. It was really hard overall because I don't think I really grasped how simple (asterisk) AI is. What I mean by that is all it ended up being was slightly convoluted math. I thought I knew much more than I did, so this project definitely humbled me. I would give this project a 100000/10 for effort and learning.
 
 # Acknowledgements
 Thank you to my dad for being a coder.
 Thank you to my mom for being kind and doing a lot of work.
-Shoutout to John Darnielle for making great music.
+Shoutout to John Darnielle and the rest of the Mountain Goats for making great music.
