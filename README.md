@@ -1,11 +1,12 @@
 # Intro
-This is my first AI, I am making it without AI libraries. It is an AI that tries to find changes in Apple stock (Apple was chosen randomly) and based on data predicts the outcome of the current day. It is not good, I mostly just made it to understand AI. I finished it but there are a lot of WIP files in here. The finished project file is "final?.cpp", and the final dataset is "aapl_prices.csv".
+This is my first AI, I am making it without AI libraries because pytorch seems pretty boring. It is an AI that tries to find changes in Apple stock (Apple was chosen randomly) and based on data predicts the outcome of the current day. It is not good, I mostly just made it to understand AI. I finished it but there are a lot of WIP files in here. The finished project file is "final?.cpp", and the final dataset is "aapl_prices.csv".
 # Details
 My dataset is Apple stock daily from 9/7/21 to 8/7/26. It is attached in the file "aapl_prices.csv". I got it for free from Stooq.
 All numbers are normalized with their Z score, which gives you the amount of standard deviations away from the mean a certain data point is.
 EMA stands for Exponential Moving Average, which weighs the most recent days more heavily on a 5 day trend to catch sudden rises or falls better.
 I used an in sample and out of sample performance difference:
 
+``` text
 **==== TRAINED WEIGHTS - BETA ====**
 
 Intercept            : 0.000649
@@ -35,6 +36,7 @@ Directional Accuracy : 56.50465%
 Next Prediction      : 0.005117
 
 Actual Next Change   : 0.004534
+```
 ## Closing Details
 What this data shows you (I believe) is that this model is not over- or under-fitted. This is because of the fact that the MSE is relatively low, and it stays almost identical when tested on non training data. In addition, ~56% directional accuracy means that it was accurate a lot of the time when predicting just to "buy" or "sell", in the sense that this isn't actually simulating buying or selling, just predicting. Overall, this was very exciting to make and stare at after I finished (and brag about).
 
