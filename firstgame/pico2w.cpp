@@ -23,25 +23,6 @@ namespace {
         constexpr int16_t qMult(const int16_t x, const int16_t y) {
             return static_cast<int16_t>((static_cast<int32_t>(x) * static_cast<int32_t>(y)) >> 15);
         }
-        constexpr int16_t ln(const int16_t x) {
-            const auto inter1 {lnLUT[(x >> 6) & 255]};
-            const auto inter2 {lnLUT[((x >> 6) & 255) + 1]};
-            const int16_t remain {static_cast<int16_t>(x & 63)};
-            return static_cast<int16_t>(inter1 + (((inter2 - inter1) * remain) >> 6));
-        }
-        constexpr int16_t tanh(const int16_t x) {
-            //get bit that says if its positive or negative
-            const auto bit     = static_cast<int16_t>(x >> 15);
-            const auto absx    = static_cast<uint16_t>((x ^ bit) - bit);
-            const size_t index = absx >> 6;
-            const auto remain  = static_cast<int16_t>(absx & 63);
-            const int32_t fir  = lut_tanh[index];
-            const int32_t sec  = lut_tanh[std::min(index + 1, static_cast<size_t>(512))];
-            //interpolation
-            const auto final = static_cast<int16_t>(fir + (((sec - fir) * remain) >> 6));
-            // get original sign from bit
-            return (static_cast<int16_t>((final ^ bit) - bit));
-        }
     }
     template <size_t r, size_t c, typename T = int16_t>
     struct Matrix {
