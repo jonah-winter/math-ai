@@ -7,7 +7,7 @@ EMA stands for Exponential Moving Average, which weighs the most recent days mor
 I used an in sample and out of sample performance difference:
 
 ``` text
-**==== TRAINED WEIGHTS - BETA ====**
+==== TRAINED WEIGHTS - BETA ====
 
 Intercept            : 0.000649
 
@@ -21,13 +21,13 @@ Vol Ratio            : -0.000767
 
 5 Day EMA Ratio      : -0.000646
 
-**==== IN-SAMPLE PERFORMANCE ====**
+==== IN-SAMPLE PERFORMANCE ====
 
 Mean Squared Error   : 0.000330
 
 Directional Accuracy : 52.851324%
 
-**==== OUT OF SAMPLE PERFORMANCE ====**
+==== OUT OF SAMPLE PERFORMANCE ====
 
 Mean Squared Error   : 0.000309
 
