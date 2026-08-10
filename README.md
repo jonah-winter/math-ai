@@ -38,7 +38,7 @@ Next Prediction      : 0.005117
 Actual Next Change   : 0.004534
 ```
 ## Closing Details
-What this data shows you (I believe) is that this model is not over- or under-fitted. This is because of the fact that the MSE is relatively low, and it stays almost identical when tested on non training data. In addition, ~56% directional accuracy means that it was accurate a lot of the time when predicting just to "buy" or "sell", in the sense that this isn't actually simulating buying or selling, just predicting. Overall, this was very exciting to make and stare at after I finished (and brag about).
+What this data shows you (I believe) is that this model is not over- or under-fitted. This is because of the fact that the MSE is relatively low, and it stays almost identical when tested on non training data. In addition, ~56% directional accuracy means that it was accurate a lot of the time when predicting just to "buy" or "sell", although this isn't actually simulating buying or selling, just predicting. Overall, this was very exciting to make and stare at after I finished (and brag about).
 Since beta is a 5x1 matrix, the actual final equation looks like $y = \beta_{0,0} + (\beta_{1,0} \cdot x_{1}) + (\beta_{2,0} \cdot x_{2}) + (\beta_{3,0} \cdot x_{3}) + (\beta_{4,0} \cdot x_{4}) + (\beta_{5,0} \cdot x_{5})$.
 
 # Conclusion
