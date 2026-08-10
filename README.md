@@ -2,7 +2,7 @@
 This is a simple input to output AI without hidden layers or backpropagation. I am going to make another model that uses those things, but I just wanted to get my fundamentals down first. I am making it without AI libraries because pytorch seems pretty boring. It is an AI that tries to predict if Apple stock (Apple was chosen randomly) will go up or down and by how much. I mostly made it to understand AI, so don't expect too much. I finished it but there are a lot of WIP files in here. The finished project file is "final?.cpp", and the final dataset is "aapl_prices.csv".
 # Details
 My dataset is Apple stock daily from 9/7/21 to 8/7/26. It is attached in the file "aapl_prices.csv". I got it for free from Stooq.
-All numbers are normalized with their Z score, which gives you the amount of standard deviations away from the mean a certain data point is.
+All numbers are normalized with their z-score, which gives you the amount of standard deviations away from the mean a certain data point is. If this wasn't used, then the volume ratio, which is on a scale of -1 to 1, would have a lot more impact than returns, which are usually tiny decimals.
 EMA stands for Exponential Moving Average, which weighs the most recent days more heavily on a 5 day trend to catch sudden rises or falls better.
 I used an in sample and out of sample performance difference:
 
