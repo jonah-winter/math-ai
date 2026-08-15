@@ -30,8 +30,8 @@ namespace {
         friend struct Matrix;
         static constexpr size_t rows {r};
         static constexpr size_t cols {c};
-        static constexpr size_t paddedRows {(r + 7) & ~7};
-        static constexpr size_t paddedCols {(c + 15) & ~15};
+        static constexpr size_t paddedRows {(r + 7) & -8};
+        static constexpr size_t paddedCols {(c + 15) & -16};
     private:
         struct uninitialized {};
         explicit Matrix(uninitialized){};
