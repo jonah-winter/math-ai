@@ -591,7 +591,7 @@ int main() {
   ai::normalize(XTrain, featMeans, featStdDevs);
   ai::applyNormalize(XTest, featMeans, featStdDevs);
   double learnRate = 0.01;
-  size_t epochs = 824;
+  size_t epochs = 1000;
   Matrix<feat + 1, 1> beta = ai::findRegression(XTrain, YTrain, learnRate, epochs);
   cout << fixed << setprecision(6);
   cout << "==== TRAINED WEIGHTS - BETA ====\n"
