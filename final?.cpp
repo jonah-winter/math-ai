@@ -8,19 +8,6 @@
 #include "utilities.h"
 template <size_t rows, size_t cols, typename T>
 struct Matrix;
-template <typename T>
-struct lazy_t {
-  const T &val;
-  explicit lazy_t(const T &val) : val(val) {}
-  template <typename U>
-    requires std::constructible_from<U, T>
-    operator U() const {
-      return static_cast<U>(val);
-    }
-  constexpr T operator()() const {
-    return val;
-  }
-};
 struct uninitialized {
   constexpr uninitialized() noexcept = default;
 };
